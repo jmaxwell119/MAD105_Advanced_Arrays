@@ -26,6 +26,8 @@ fun main(){
             // display the name of the item, the original amount
             var originalItem = aIngredientsArray[(selection - 1)]
             var originalAmount = aInventoryArray[(selection - 1)]
+            println("")
+            println("do you want to increase or decrease the amount of $originalItem? ")
             // increase amount
             println("1. increase amount")
             // decrease amount
