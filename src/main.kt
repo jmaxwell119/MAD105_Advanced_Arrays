@@ -1,6 +1,6 @@
 fun main(){
-    var aIngredientsArray = arrayOf("ice cream", "sprinkles", "chocolate syrup", "whipped cream", "maraschino cherries", "banana", "walnuts")
-    var aInventoryArray = arrayOf(17, 15, 7, 6, 4, 8, 10)
+    val aIngredientsArray = arrayOf("ice cream", "sprinkles", "chocolate syrup", "whipped cream", "maraschino cherries", "banana", "walnuts")
+    val aInventoryArray = arrayOf(17, 15, 7, 6, 4, 8, 10)
     var counter = 0
     println("")
     println("Inventory")
@@ -21,11 +21,11 @@ fun main(){
         println("7. walnuts")
         println("8. exit")
         print("to change inventory amounts, enter a number to select which item to change amount of: ")
-        var selection = readLine()!!.toInt()
+        val selection = readLine()!!.toInt()
         if (selection != 8){
             // display the name of the item, the original amount
-            var originalItem = aIngredientsArray[(selection - 1)]
-            var originalAmount = aInventoryArray[(selection - 1)]
+            val originalItem = aIngredientsArray[(selection - 1)]
+            val originalAmount = aInventoryArray[(selection - 1)]
             println("")
             println("do you want to increase or decrease the amount of $originalItem? ")
             // increase amount
@@ -33,10 +33,10 @@ fun main(){
             // decrease amount
             println("2. decrease amount")
             print("please enter 1 or 2 to make a selection: ")
-            var changeDir = readLine()!!.toInt()
+            val changeDir = readLine()!!.toInt()
             // how much to change amount
             print("by how much should the amount be increased or decreased? ")
-            var changeAmount = readLine()!!.toInt()
+            val changeAmount = readLine()!!.toInt()
             if (changeDir == 1){
                 aInventoryArray[(selection - 1)] = aInventoryArray[(selection - 1)] + changeAmount
             }
